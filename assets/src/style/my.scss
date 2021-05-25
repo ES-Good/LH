@@ -1,0 +1,32 @@
+body{
+    background-color: #131522;
+    color: #B9BDD8;
+    font-size: 18px;
+    font-family: 'Montserrat';
+}
+
+
+.bg-s-top{
+    background-repeat: no-repeat;
+    background-image: url(../img/s-top/bg.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.s-top{
+    &__text-line{
+        background-repeat: no-repeat;
+        background-image: url(../img/text-line.png);
+        background-position-x:center;
+        background-position-y: bottom;
+        background-size: contain;
+    }
+
+    &_img-des{
+        width: 100%;
+    }
+
+    &__text{
+        max-width: 455px;
+    }
+}

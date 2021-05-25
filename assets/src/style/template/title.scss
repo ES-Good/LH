@@ -1,0 +1,21 @@
+.title{
+    color: #fff;
+    &_big{
+        font-size: $fz-tit-big;
+        font-weight: 800;
+    }
+    &_medium{
+        font-size: $fz-tit-medium;
+        font-weight: 800;
+    }
+    &_small{
+        font-size: $fz-tit-small;
+    }
+    &_mini{
+        font-size: $fz-tit-mini;
+    }
+    &_s-top{
+        font-size: 40px;
+        font-weight: 400;
+    }
+}
