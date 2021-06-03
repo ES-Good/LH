@@ -68,6 +68,14 @@ body{
     z-index: -1;
 }
 
+.bg-footer{
+    mix-blend-mode: lighten;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
 .s-top{
     padding-top: 100px;
     &__text-line{
