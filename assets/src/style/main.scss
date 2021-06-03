@@ -40,6 +40,9 @@
 
 
 
+@import "../../../node_modules/swiper/swiper-bundle.css";
+@import "../../../node_modules/swiper/swiper";
+
 
 // Подключение своих SCSS файлов
 @import "variables"; //переменные
@@ -48,6 +51,8 @@
 @import "template/text";
 @import "template/btn";
 @import "template/title";
+@import "template/form";
+
 @import "my";
 @import "media";
 

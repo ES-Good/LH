@@ -7,6 +7,7 @@
 
 //= ../../../node_modules/bootstrap/dist/js/bootstrap.min.js
 
+//= ../../../node_modules/swiper/swiper-bundle.min.js
 
 
 
