@@ -468,7 +468,7 @@ body{
 .s-reviews{
     position: relative;
     .swiper-slide{
-        background-color: $red;
+        background-color: rgba($color: $red, $alpha: 0.5);
         position: relative;
         padding: 50px 20px 30px 20px;
         border-radius: 80px 0 80px 0;
@@ -508,18 +508,110 @@ body{
 }
 
 .modal-content{
-    background-color: #131522;
+    background-color: rgba($color: #131522, $alpha: 0.6);
     background-repeat: no-repeat;
     background-position-x: 400px;
     background-position-y: 100px;
+    background-image: none !important;
     border-radius: 30px;
     .title{
-        max-width: 490px;
         width: 100%;
     }
     form{
-        background-color: transparent !important;
         transform: none !important;
     }
 }
 
+.modal-xl{
+    max-width: 1600px;
+}
+
+.form_radio_btn {
+    max-width: 140px;
+    width: 100%;
+    margin: 10px 0;
+}
+.form_radio_btn input[type=radio] {
+	display: none;
+}
+.form_radio_btn label {
+	cursor: pointer;
+	border: 1px solid #4D5069;
+	border-radius: 6px;
+	user-select: none;
+    color: #fff;
+    background-color:#1C1F33;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+/* Checked */
+.form_radio_btn input[type=radio]:checked + label {
+	background: $red;
+}
+ 
+/* Hover */
+.form_radio_btn label:hover {
+	text-shadow: 0 0 50px #fff;
+}
+ 
+/* Disabled */
+.form_radio_btn input[type=radio]:disabled + label {
+	background: #efefef;
+	color: #666;
+}
+
+.s-quiz{
+    &__inner{
+        background: rgba(23, 25, 43, 0.9);
+        border-radius: 30px;
+        border: 4px solid #4D5069;
+    }
+
+    &__last-step {
+        background: rgba(23, 25, 43, 0.9);
+        border-radius: 30px;
+        border: 4px solid #4D5069;
+
+        &__form{
+            padding: 5px;
+
+            &__input{
+                background-color: #D1D5EA;
+                border: 1px solid #4D5069;
+                border-radius: 10px;
+                padding: 25px 0 25px 35px;
+                max-width: 440px;
+                width: 100%;
+            }
+
+            &__title{
+                font-size: 16px;
+                max-width: 715px;
+                width: 100%;
+            }
+        }
+
+        &__trap{
+            padding: 60px 0;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            &__title{
+                font-size: 16px;
+            }
+
+            &__discription{
+                font-size: 14px;
+                max-width: 330px;
+                width: 100%;
+            }
+        }
+    }
+}

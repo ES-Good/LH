@@ -46,7 +46,10 @@
         height: 25px;
         border: none;
         background-color: transparent;
-        position: relative;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        z-index: 99;
 
         &::after,
         &::before{
